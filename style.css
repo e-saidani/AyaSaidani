@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.079);
+    text-align: center;
+    font-family: "Poppins", cursive;
+    background-color: rgba(255, 147, 183, 0.978);
+    letter-spacing: 0.5px;
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 20px;
+}
+nav li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2%;
+    background-color: pink;
+    padding-bottom: 0%;
+}
+#home div{
+    width: 80%;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+span{
+    color: palevioletred;
+}
+
+.content{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 800px){
+
+.content{
+    font-size: xx-large;
+    font-weight: 200;
+}
+video{
+    height: 400px;
+}
+#home{
+    padding-top: 86px;
+}
+
+}
+@media(max-width: 400px){
+    .content{font-size: smaller;}
+    video{margin-top: 20px;}}
+   
+img{
+    display: flex;
+}
+#about{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 20px;
+   flex-wrap: wrap-reverse;
+   color: aliceblue;
+   background-color: rgba(0, 0, 0, 0.348);
+}
+#about h2{
+    color: black;
+}
+#skills{
+    background-color: pink;
+}
+#skills h2{
+    color: palevioletred;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 20px;
+}
+.skills{
+    width: 100%;
+    height: 100%;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.338);
+    backdrop-filter: blur(5px);
+    opacity: 0;   
+    color: aliceblue;
+}
+.overlay:hover{opacity: 1;}
+.overlay h4{
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5%;
+    
+}
+#contact{
+    padding-top: 10px;
+    color: black;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: center;
+}
+.footer{
+    padding: 30px;
+}
+.button{
+ 
+    background-color: beige;
+    color: bisque;
+    padding: 2%;
+    z-index: 1;
+    border: 0.01% solid rgba(0,0,0,0.1);
+    border-radius: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+   
+
+}
+.button a{
+    text-decoration: none;
+    color: palevioletred;
+    letter-spacing: 0.5px;
+}
